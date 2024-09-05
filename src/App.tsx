@@ -15,14 +15,15 @@ const loadPCYY = async () => {
     const s2 = await loadRemote('pcyyBase/components/BottomBar/ChannelBottomBar')
     const s3 = await loadRemote('pcyyBase/components/ChannelTree')
     const s4 = await loadRemote('pcyyBase/components/MicrophonePanel')
-	console.info('loadPCYY #1', s1)
-    console.info('loadPCYY #1', s2)
-    console.info('loadPCYY #1', s3)
-    console.info('loadPCYY #1', s4)
+	console.info('loadPCYY #s1', s1)
+    console.info('loadPCYY #s2', s2)
+    console.info('loadPCYY #s3', s3)
+    console.info('loadPCYY #s4', s4)
 }
 function App() {
 	const [count, setCount] = useState(0);
 	useEffect(() => {
+		console.log(`use effect`)
 		init({
 			name: 'empAdepterProject',remotes: []
 		})
